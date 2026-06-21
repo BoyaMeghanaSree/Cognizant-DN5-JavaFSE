@@ -1,0 +1,28 @@
+1. Big O Notation
+
+Big O notation is a method used to evaluate the efficiency of an algorithm. It shows how the running time of an algorithm changes 
+when the input size increases. It helps programmers compare different algorithms and select the most suitable one.
+
+2. Best, Average and Worst Cases
+
+Linear Search:
+Best Case: O(1) when the required element is found at the first position.
+Average Case: O(n) when the element is located somewhere in the middle.
+Worst Case: O(n) when the element is at the last position or not available.
+
+Binary Search:
+Best Case: O(1) when the middle element matches the search key.
+Average Case: O(log n) because the search range is reduced by half at each step.
+Worst Case: O(log n) when multiple comparisons are needed before finding the element or confirming it is absent.
+
+3. Comparison of Linear Search and Binary Search
+
+Linear Search examines each element one after another until the target is found. Its time complexity is O(n).
+
+Binary Search works only on sorted data. It repeatedly divides the search range into two parts, giving a time complexity of O(log n).
+
+4. Suitable Algorithm for an E-commerce Platform
+
+For a large e-commerce application, Binary Search is a better option because it can locate products much faster than Linear Search 
+when the data is sorted. Since online stores may contain thousands of products, Binary Search helps improve search performance and 
+reduces response time.
