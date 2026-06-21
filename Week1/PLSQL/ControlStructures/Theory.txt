@@ -1,0 +1,14 @@
+This exercise demonstrates the use of control structures in PL/SQL to perform different banking operations.
+
+In Scenario 1, a FOR loop is used to identify customers whose age is greater than 60. For those customers, the loan interest rate is 
+reduced by 1%. This shows how PL/SQL can be used to process records and update data based on specific conditions.
+
+In Scenario 2, customers with an account balance greater than 10000 are promoted to VIP status. The program iterates through customer
+records and updates the IsVIP field to TRUE for eligible customers. This demonstrates record processing and conditional updates.
+
+In Scenario 3, the program retrieves loans that are due within the next 30 days and generates reminder messages for customers. 
+DBMS_OUTPUT.PUT_LINE is used to display the reminder details. This scenario shows how PL/SQL can be used to generate useful 
+notifications based on stored data.
+
+Through this exercise, concepts such as FOR loops, conditional filtering, data updates, record iteration, and output generation were 
+implemented. These control structures help automate banking operations efficiently and reduce manual effort.
