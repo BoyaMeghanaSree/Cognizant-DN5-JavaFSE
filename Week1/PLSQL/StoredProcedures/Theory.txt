@@ -1,0 +1,17 @@
+This exercise demonstrates the use of stored procedures in PL/SQL to perform different banking operations.
+
+In Scenario 1, a stored procedure named ProcessMonthlyInterest is used to calculate monthly interest for savings accounts. The procedure
+updates the balance of all savings accounts by applying an interest rate of 1% to the current balance. This shows how stored procedures 
+can automate repetitive calculations and updates.
+
+In Scenario 2, a stored procedure named UpdateEmployeeBonus is used to implement an employee bonus scheme. The procedure accepts the 
+department name and bonus percentage as parameters and updates the salaries of employees in the specified department. This demonstrates
+the use of parameterized procedures and salary calculations.
+
+In Scenario 3, a stored procedure named TransferFunds is used to transfer money between accounts. Before transferring the amount, 
+the procedure checks whether the source account has sufficient balance. If enough funds are available, the amount is deducted from 
+one account and added to the other account. This demonstrates the use of conditional statements and transaction processing in PL/SQL.
+
+Through this exercise, concepts such as stored procedure creation, parameter passing, conditional logic, data updates, transaction 
+management, and database automation were implemented. Stored procedures help improve code reusability, maintainability, and efficiency
+in database applications.
