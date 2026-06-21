@@ -1,0 +1,18 @@
+Recursion is a programming technique in which a function calls itself to solve a problem. It breaks a larger problem into smaller and 
+similar subproblems. Every recursive function must have a base condition to stop the recursive calls. Recursion is useful because it 
+can make certain problems easier to understand and implement.
+
+In this financial forecasting program, recursion is used to calculate the future value of an investment. The current amount is increased 
+based on the given growth rate for each year. The function continues to call itself by reducing the number of years until it reaches zero. 
+Once the number of years becomes zero, the recursion stops and returns the final predicted value.
+
+The time complexity of this recursive approach is O(n), where n is the number of years. This is because one recursive call is made for 
+every year in the forecast. The space complexity is also O(n) since each recursive call is stored in the call stack until the computation 
+is completed.
+
+Although recursion provides a simple and clear solution, it may lead to additional memory usage when the number of years is very large. 
+The solution can be optimized by using an iterative approach with loops, which reduces stack usage. Another alternative is to use the 
+compound growth formula directly to calculate the future value without repeated recursive calls.
+
+Therefore, recursion is a good choice for understanding and implementing financial forecasting, while iterative or mathematical approaches 
+can be preferred when better performance is required.
