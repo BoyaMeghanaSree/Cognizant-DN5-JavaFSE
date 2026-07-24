@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class App extends Component {
+
   constructor() {
     super();
 
@@ -12,15 +13,11 @@ class App extends Component {
   }
 
   increment = () => {
-    this.setState((prevState) => ({
-      count: prevState.count + 1
-    }));
+    this.setState({ count: this.state.count + 1 });
   };
 
   decrement = () => {
-    this.setState((prevState) => ({
-      count: prevState.count - 1
-    }));
+    this.setState({ count: this.state.count - 1 });
   };
 
   sayHello = () => {
@@ -52,17 +49,15 @@ class App extends Component {
     const amount = Number(this.state.amount);
     const result = amount * 80;
 
-    alert(
-      "Converting to " +
-      this.state.currency +
-      " Amount is " +
-      result
-    );
+    alert("Converting to Euro Amount is " + result);
   };
 
   render() {
+
     return (
+
       <div style={{ margin: "20px" }}>
+
         <h2>{this.state.count}</h2>
 
         <button onClick={this.incrementHello}>
@@ -78,20 +73,21 @@ class App extends Component {
         <br /><br />
 
         <button onClick={() => this.welcome("welcome")}>
-          Say Welcome
+          Say welcome
         </button>
 
         <br /><br />
 
         <button onClick={this.clickMe}>
-          Click on Me
+          Click on me
         </button>
 
         <h1 style={{ color: "green" }}>
-          Currency Converter!!!
+          Currency Convertor!!!
         </h1>
 
         <form onSubmit={this.handleSubmit}>
+
           <label>Amount: </label>
 
           <input
@@ -117,8 +113,11 @@ class App extends Component {
           <button type="submit">
             Submit
           </button>
+
         </form>
+
       </div>
+
     );
   }
 }
